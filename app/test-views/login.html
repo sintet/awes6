@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>login </title>
+  <link rel="stylesheet" href="bower_components\material-design-lite\material.min.css">
+  <style>
+    html, body{
+        height: 100%;
+    }
+    .login-form{
+      text-align: center;
+    }
+    .form-wrap {
+        justify-content: center;
+        align-items: center;
+   }
+    
+  </style>
+</head>
+<body>
+  <div class="mdl-layout form-wrap">
+    <form action="#" class="login-form">
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" id="sample1">
+        <label class="mdl-textfield__label" for="sample1">Login...</label>
+      </div>
+        <br>
+      <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="password" id="pass" pattern="[A-Z,a-z,0-9 ]*">
+        <label class="mdl-textfield__label" for="pass">Password...</label>
+        <span class="mdl-textfield__error">Use letters and numbers together </span>
+      </div>
+        <br>
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+        submit
+      </button>
+    </form>
+  </div>
+
+
+
+  <script src="bower_components\material-design-lite\material.min.js"></script>
+</body>
+</html>

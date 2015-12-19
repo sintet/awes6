@@ -1,4 +1,4 @@
-/*jshint esnext: true */
+
 const webpack = require('webpack');
 const path = require('path');
 
@@ -28,6 +28,10 @@ module.exports = {
         loader: "style-loader!css-loader!postcss-loader!stylus-loader"
       },
       {
+        test: /\.scss$/,
+        loader: "style-loader!css-loader!postcss-loader!sass-loader"
+      },
+      {
         test: /\.html$/,
         loader: "raw-loader"
       },
@@ -39,5 +43,4 @@ module.exports = {
   plugins: [
       new webpack.OldWatchingPlugin()
   ]
-
 };
