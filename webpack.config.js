@@ -24,10 +24,6 @@ module.exports = {
         loader: "style-loader!css-loader!postcss-loader"
       },
       {
-        test: /\.styl$/,
-        loader: "style-loader!css-loader!postcss-loader!stylus-loader"
-      },
-      {
         test: /\.scss$/,
         loader: "style-loader!css-loader!postcss-loader!sass-loader"
       },

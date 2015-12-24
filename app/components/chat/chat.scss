@@ -1,0 +1,27 @@
+.chat {
+  background:#f2f2f2;
+  width: 400px;
+  overflow-y: auto;
+}
+.mdl-layout {
+  align-items: center;
+}
+.message-input {
+  resize: none;
+}
+.message-item {
+  border-radius: 2px;
+  cursor: pointer;
+  width: 400px;
+  padding: 0 20px;
+  &.received{
+    text-align: left;
+    background-color: #F44336;
+  }
+  &.sent{
+    text-align: right;
+  }
+}
+.message-text {
+  word-wrap: break-word;
+}

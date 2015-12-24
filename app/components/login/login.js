@@ -1,21 +1,17 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
-// import homeComponent from './home.component';
+import loginDirective from './login-directive.js';
 
-let homeModule = angular.module('login', [
+import './login.scss';
+
+export default angular.module('login', [
   uiRouter
 ])
-
-.config(($stateProvider, $urlRouterProvider) => {
-  $urlRouterProvider.otherwise('/');
-
+.config(($stateProvider) => {
   $stateProvider
-    .state('home', {
-      url: '/',
+    .state('login', {
+      url: '/login',
       template: '<login></login>'
     });
 })
-
-.directive('login', homeComponent);
-
-export default homeModule;
+.directive('login', loginDirective);

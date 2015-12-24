@@ -1,0 +1,23 @@
+<div class="mdl-layout">
+  <h2>{{chatCtrl.user}}</h2>
+  <div class=" mdl-card mdl-shadow--2dp  chat" >
+    <div class=" message-item received" ng-repeat="message in chatCtrl.messages">
+      <h2 class="username">{{message.from}}</h2>
+      <p class="message-text">{{message.body}}</p>
+    </div>
+  </div>
+
+  <form action="#">
+    <div class="mdl-textfield mdl-js-textfield">
+      <textarea class="mdl-textfield__input message-input" type="text"  id="sample5" ng-model="chatCtrl.messageText" ></textarea>
+      <label class="mdl-textfield__label" for="sample5">Text lines...</label>
+    </div>
+
+    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" ng-click="chatCtrl.sendMessage()" >
+      send
+    </a>
+    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" ui-sref="rooms" ng-click="chatCtrl.leaveThisRoom()" >
+      leave this room
+    </a>
+  </form>
+</div>
