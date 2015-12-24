@@ -1,7 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import chatDirective from './chat-directive.js';
-
+import AuthService from '../auth/auth-service.js';
 import './chat.scss';
 
 export default angular.module('chat', [
@@ -14,4 +14,5 @@ export default angular.module('chat', [
       template: '<chat></chat>'
     });
 })
+.factory('AuthService', AuthService)
 .directive('chat', chatDirective);

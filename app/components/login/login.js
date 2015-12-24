@@ -1,7 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import loginDirective from './login-directive.js';
-
+import AuthService from '../auth/auth-service.js';
 import './login.scss';
 
 export default angular.module('login', [
@@ -14,4 +14,5 @@ export default angular.module('login', [
       template: '<login></login>'
     });
 })
+.factory('AuthService', AuthService)
 .directive('login', loginDirective);
