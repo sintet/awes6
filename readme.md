@@ -5,8 +5,8 @@ install all dependencies with "npm install"
 run it with "npm start"
 
 used tools and technologies:
-*webpack
-*babel
+* item webpack
+* item babel
 *sass
 *angular
 *firbase with angularfire library
