@@ -22,12 +22,12 @@ LoginDirectiveController.prototype.logIn = function() {
        password:  this.password
   },{
   remember: "sessionOnly"
-}).then(function(userData) {
-      console.log("loged successfully with payload:", userData);
-      self.state.go('rooms');
-  }).catch(function(error) {
-    console.log("Login Failed!", error);
-  });
+  }).then(function(userData) {
+        console.log("loged successfully with payload:", userData);
+        self.state.go('rooms');
+    }).catch(function(error) {
+        console.log("Login Failed!", error);
+      });
 };
 LoginDirectiveController.prototype.logOut = function() {
   this.auth.$unauth();

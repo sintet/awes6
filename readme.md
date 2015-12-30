@@ -2,7 +2,7 @@
 
 This is realtime firbase chat app.
 install all dependencies with "npm install"
-run it with "npm start"
+run it with "npm start" then open localhost:8080
 
 used tools and technologies:
 * webpack
